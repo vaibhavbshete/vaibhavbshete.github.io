@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Shete</title>
+    <script>
+        fetch('/mix-manifest.json')
+            .then(response => response.json())
+            .then(manifest => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = manifest['/pub/main.css'];
+                document.head.appendChild(link);
+            });
+    </script>
+    <noscript>
     <link rel="stylesheet" href="pub/main.css">
+    </noscript>
 </head>
-<body class="px-2">
+<body class="px-8">
     <div class="mx-auto my-24">
         <h1 class="text-3xl font-sans font-bold text-gray-600 text-center">
             Vaibhav Shete Resume

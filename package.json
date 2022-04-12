@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "A resume of all my work",
   "private": true,
-  "main": "index.js",
   "scripts": {
-    "watch": "npx tailwindcss -i ./src/main.css -o ./pub/main.css --watch",
-    "prod": "npx tailwindcss -i ./src/main.css -o ./pub/main.css --minify"
+    "mix": "mix",
+    "mix-watch": "mix watch",
+    "mix-prod": "mix --production",
+    "mix-watch-poll": "mix watch -- --watch-options-poll=1000"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/vaibhavbshete/vaibhavbshete.github.io#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.9",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "laravel-mix": "^6.0.43",
     "tailwindcss": "^3.0.23"
   }
