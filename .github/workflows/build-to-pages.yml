@@ -37,12 +37,12 @@ jobs:
         run: |
           tar \
             --dereference --hard-dereference \
-            --directory "." \ 
+            --directory "." \
             -cvf "$RUNNER_TEMP/artifact.tar" \
             --exclude=.git \
             --exclude=.github \
-            --exclide=node_modules \
-            "."
+            --exclude=node_modules \
+            .
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
