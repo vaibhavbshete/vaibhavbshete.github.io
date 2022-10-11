@@ -33,22 +33,28 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run mix-prod
-      - name: Upload artifact
+      - name: Archive artifact
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory "." \ 
+            -cvf "$RUNNER_TEMP/artifact.tar" \
+            --exclude=.git \
+            --exclude=.github \
+            --exclide=node_modules \
+            "."
         uses: actions/upload-artifact@v3
         with:
-          # Upload entire repository
           name: github-pages
-          path: |
-            . 
-            !node_modules/**/*
+          path: ${{runner.temp}}/artifact.tar
             
   deploy:
-     environment:
+    environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-     needs: build
-     runs-on: ubuntu-latest
-     steps:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
