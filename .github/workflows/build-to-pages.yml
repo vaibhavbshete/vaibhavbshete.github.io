@@ -28,6 +28,9 @@ jobs:
       - run: npm ci
       - run: npm run mix-prod
   deploy:
+     environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
      needs: build
      runs-on: ubuntu-latest
      steps:
