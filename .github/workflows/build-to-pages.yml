@@ -34,12 +34,13 @@ jobs:
       - name: Build
         run: npm run mix-prod
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           # Upload entire repository
-          name: built-up
+          name: github-pages
           path: |
-            '.'
+            . 
+            !node_modules/**/*
             
   deploy:
      environment:
