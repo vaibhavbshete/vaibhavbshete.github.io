@@ -1,9 +1,9 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
-mix.disableNotifications().setPublicPath('.').version();
+mix.disableNotifications().setPublicPath('./pub').version();
 
-mix.css('src/main.css', 'pub/main.css');
+mix.css('src/main.css', 'main.css');
 
 mix.browserSync({
     
