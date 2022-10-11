@@ -1,4 +1,4 @@
-name: build and deploy to gh pages
+name: build output and deploy to gh pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -37,7 +37,9 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: '.'
+          path: |
+            '.'
+            !node_modules
   deploy:
      environment:
       name: github-pages
