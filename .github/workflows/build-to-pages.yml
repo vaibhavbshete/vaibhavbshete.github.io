@@ -37,9 +37,10 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
+          name: built-up
           path: |
             '.'
-            !node_modules
+            
   deploy:
      environment:
       name: github-pages
