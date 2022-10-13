@@ -27,7 +27,7 @@ jobs:
         run: |
           echo $COMMITS
         env:
-          COMMITS: ${{ github.event.commits }}
+          COMMITS: ${{ github.event.commits[0] }}
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
