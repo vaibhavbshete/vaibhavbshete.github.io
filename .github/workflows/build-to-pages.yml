@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: test commit for letters
         run: |
-          echo "${{toJSON(github.event.commits)}}"
+          echo "${{toJSON(github.event)}}"
           echo "\n"
           echo "haha"
       - uses: actions/checkout@v3
