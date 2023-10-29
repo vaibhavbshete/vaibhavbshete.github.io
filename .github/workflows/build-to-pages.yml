@@ -39,10 +39,12 @@ jobs:
             -cvf "$RUNNER_TEMP/artifact.tar" \
             --exclude=.git \
             --exclude=.github \
+            --exclude=.gitignore \
             --exclude=node_modules \
+            --exclude=src \
+            --exclude=README.md \
             --exclude=*.config.js \
-            --exclude=package.json \
-            --exclude=package-lock.json \
+            --exclude=package*.json \
             .
       - name: Upload artifact
         uses: actions/upload-artifact@v3
