@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build
-        run: npm run mix-prod
+        run: npm run build
       - name: Archive artifact
         run: |
           tar \
@@ -40,6 +40,9 @@ jobs:
             --exclude=.git \
             --exclude=.github \
             --exclude=node_modules \
+            --exclude=*.config.js \
+            --exclude=package.json \
+            --exclude=package-lock.json \
             .
       - name: Upload artifact
         uses: actions/upload-artifact@v3
