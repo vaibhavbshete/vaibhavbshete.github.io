@@ -5,24 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaibhav Shete</title>
-    <link rel="stylesheet" href="/pub/main.css" id="stylelink">
-    <script>
-        fetch('/pub/mix-manifest.json')
-            .then(response => response.json())
-            .then(manifest => {
-                const link = document.createElement('link');
-                const simplelink = document.getElementById('stylelink');
-                link.rel = 'stylesheet';
-                link.onload = ()=>{
-                    simplelink.remove();
-                }
-                link.href = manifest['/pub/main.css'];
-                document.head.appendChild(link);
-            });
-    </script>
+    <link rel="stylesheet" href="src/main.css" id="stylelink">
 </head>
 <body>
-    <div class="mx-auto my-24">
+    <main class="mx-auto my-24">
         <h1 class="text-3xl font-sans font-bold text-gray-600 text-center px-8">
             Vaibhav Shete Resume
         </h1>
@@ -46,6 +32,6 @@
                 </svg>
             </a>
         </div>
-    </div>
+    </main>
 </body>
 </html>
