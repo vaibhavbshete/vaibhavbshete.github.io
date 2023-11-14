@@ -39,12 +39,12 @@
         "name": "The Muse",
         "link":"https://www.youtube.com/watch?v=NjUI32B6laI",
         "year":2020,
-        "roles":["dev"]
+        "roles":["editor","colourist"]
     },
     {
         "name": "Ark Website",
         "link":"https://arkevents.co.in",
         "year":2020,
-        "roles":["dev"]
+        "roles":["dev","designer"]
     }
 ]
