@@ -1,4 +1,7 @@
 import Alpine from "alpinejs";
+import works from "./works.json";
+
+// window.works = works;
 
 window.Alpine = Alpine;
 
@@ -24,6 +27,7 @@ Alpine.data('tabs', () => {
             }
         ],
         openTab: 'dev',
+        works: works,
         tabWorks: (role) => {
             return works.filter(work => (new Set(work.roles)).has(role))
         }
