@@ -50,24 +50,20 @@
                  
                 </div>
             </header>
-            <article x-data="{openTab:'dev'}">
-                
+            <article x-data="tabs">
                 <nav class=" text-gray-500 text-center flex flex-wrap justify-center">
-                    <a class="text-gray-400 hover:text-gray-600 border-b-2 border-b-transparent px-3 py-2" href="#dev"  x-bind:class="{ 'border-b-gray-600 text-gray-600': openTab === 'dev','border-b-transparent ':openTab!=='dev' }" x-on:click="openTab='dev'" >
-                        PHP Full Stack Developer
+                    <template x-for="tab in tabs">
+                    <a 
+                     class="text-gray-400 hover:text-gray-600 border-b-2 border-b-transparent px-3 py-2"
+                     :href="`#${tab.id}`"  x-text="tab.name"
+                     x-bind:class="{ 
+                        'border-b-gray-600 text-gray-600': openTab === tab.id,
+                        'border-b-transparent': openTab !== tab.id 
+                     }"
+                     x-on:click="openTab=tab.id" 
+                    >
                     </a>  
-                    
-                    <a class="text-gray-400 hover:text-gray-600 border-b-2 border-b-transparent px-3 py-2"  href="#editor" x-bind:class="{ 'border-b-gray-600 text-gray-600': openTab === 'editor','border-b-transparent ':openTab!=='editor' }" x-on:click="openTab='editor'" >
-                        Film Editor
-                    </a>  
-                    
-                    <a class="text-gray-400 hover:text-gray-600 border-b-2 border-b-transparent px-3 py-2"  href="#colourist" x-bind:class="{ 'border-b-gray-600 text-gray-600': openTab === 'colourist','border-b-transparent ':openTab!=='colourist' }" x-on:click="openTab='colourist'" >
-                        Colourist
-                    </a>  
-                    
-                    <a class="text-gray-400 hover:text-gray-600 border-b-2 border-b-transparent px-3 py-2" href="#designer"  x-bind:class="{ 'border-b-gray-600 text-gray-600': openTab === 'designer','border-b-transparent ':openTab!=='designer' }" x-on:click="openTab='designer'" >
-                        Graphic Designer
-                    </a>
+                    </template>
                 </nav>
                 <div x-show="openTab === 'dev'" id="dev">
                     <p class="text-gray-400 my-4 text-center px-8">
