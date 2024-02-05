@@ -70,9 +70,43 @@
                     <template x-for="thisTab in tabs">
                         <div x-show="openTab === thisTab.id" :id="thisTab.id">
                             <div class="text-gray-400 my-4 text-center px-8">
-                                <ul>
+                                <ul class="space-y-4">
                                     <template x-for="currwork in tabWorks(thisTab.id)">
-                                    <li  x-text="currwork.name">
+                                    <li>
+                                        <template x-if="currwork.data">
+                                            <div class="flex shadow rounded bg-gray-50 hover:bg-gray-100 p-1.5" >
+
+                                                <template x-if="currwork.data.thumbnail">
+                                                    <img class="h-20 rounded aspect-video object-cover" :src="currwork.data.thumbnail" :alt="currwork.name">
+                                                </template>
+                                                <template x-if="!(currwork.data.thumbnail)">
+                                                    <div class="h-20 rounded aspect-video bg-gray-200"></div>
+                                                </template>
+                                    
+                                                <div class="w-full text-left px-4">
+                                                    <!-- <div class="font-bold" x-text="currwork.name"></div> -->
+                                                    <!-- <div class="text-gray-500" x-text="currwork.data.type"></div> -->
+                                                    <table class="w-full">
+                                                        <thead><th class="text-center bg-gray-200 px-2" colspan="2"  x-text="currwork.name"></th></thead>
+                                                        <template x-if="currwork.data.type == 'short-film'" x-data="{filmData: currwork.data}">
+                                                            <tbody>
+                                                                <tr><th sc></th></tr>
+                                                                <tr><th class="px-2" scope="row">Director</th><td class="px-2" x-text="filmData.director"></td></tr>
+                                                                <tr><th class="px-2" scope="row">DoP</th><td class="px-2" x-text="filmData.dop"></td></tr>
+                                                                <tr><th class="px-2" scope="row">Duration</th><td class="px-2" x-text="filmData.duration"></td></tr>
+                                                            </tbody>
+                                                        </template>
+                                                    </table>
+                                                    <template  x-if="currwork.data.link">
+                                                        <a class="block text-gray-400 hover:text-gray-600" :href="currwork.data.link.url" target="_blank" x-text="currwork.data.link.type"></a>
+                                                    </template>
+                                                </div>
+
+                                            </div>
+                                        </template>
+                                        <template x-if="!(currwork.data)">
+                                            <span  x-text="currwork.name"></span>
+                                        </template>
                                     </li>
                                 </template>
                                 </ul>
