@@ -26,7 +26,7 @@ Alpine.data('tabs', () => {
                 name: 'Graphic Designer',
             }
         ],
-        openTab: 'dev',
+        openTab: 'editor',
         works: works,
         tabWorks: (role) => {
             return works.filter(work => (new Set(work.roles)).has(role))
