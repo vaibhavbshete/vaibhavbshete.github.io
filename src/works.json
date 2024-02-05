@@ -3,13 +3,33 @@
         "name": "Devdasi",
         "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2013,
-        "roles":["editor"]
+        "roles":["editor"],
+        "data":{
+            "type":"short-film",
+            "link":{
+                "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
+                "type": "Full Film",
+                "platform": "youtube"
+            },
+            "director": "Digant Patil",
+            "dop":"Utkarsh Marulkar",
+            "duration":"15min",
+            "thumbnail": "img/thumbnail-devdasi.jpg"
+        }
     },
     {
         "name": "Soniyacha Dinu",
         "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2013,
-        "roles":["editor"]
+        "roles":["editor"],
+        "data":{
+            "type": "short-film",
+            "link":{
+                "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
+                "type": "Full Film",
+                "platform": "youtube"
+            }
+        }
     },
     {
         "name": "Puran",
