@@ -65,7 +65,7 @@
             // raw-dog get this svg top position inside the reference frame
             let refBox = referenceFrame.getBoundingClientRect()
             let svgBox = svgEleme.getBoundingClientRect()
-            let scrollPercent = ((svgBox.top - refBox.top) / refBox.height) * 100
+            let scrollPercent = ((refBox.height - (svgBox.top - refBox.top)) / refBox.height) * 100
             // let scrollPercent = 
             console.log(scrollPercent,referenceFrame,svgEleme);
             setPositionByScroll(scrollPercent,svgEleme)
