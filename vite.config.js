@@ -5,7 +5,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve (__dirname, 'index.html'),
-                plane: resolve (__dirname, 'plane-scroll.html'),
+                plane: resolve (__dirname, 'plane-scroll.htm'),
                 err404: resolve (__dirname, '404.html'),
             }
         },
