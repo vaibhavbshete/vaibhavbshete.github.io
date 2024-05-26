@@ -27,9 +27,9 @@
     <div data-reference-frame class="overflow-y-auto fixed-window">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illum excepturi reiciendis at ipsa reprehenderit dolor alias blanditiis ducimus non voluptate natus, eveniet debitis. Laborum autem beatae molestias voluptatibus voluptatum dolore eos nobis libero eaque accusantium, natus similique quasi quos ratione, soluta placeat commodi maxime repellat pariatur neque repudiandae perferendis? Nam quasi quam culpa labore a quos at voluptates, corporis aperiam sunt magnam illo? Consequatur laboriosam fugit quae quasi repudiandae! Veritatis excepturi quidem officiis at rem, reprehenderit minima quibusdam consequatur fuga error suscipit veniam? Temporibus error consequatur exercitationem suscipit cum perferendis, accusamus enim minus voluptates, iusto officiis voluptas eos optio expedita vero facilis consectetur dicta, quia ut reprehenderit quas velit fugiat totam laboriosam! Eligendi aperiam, praesentium neque nesciunt, vero enim inventore nobis provident odio modi expedita dolorum voluptatum officia error exercitationem incidunt et esse voluptates ullam numquam deserunt quibusdam? Nisi eius itaque nihil veniam voluptate sunt, incidunt molestiae exercitationem voluptatum nulla sapiente non, veritatis laboriosam enim. Rem sit dolorum aspernatur vitae tempora quae quasi accusamus optio, tempore veritatis et distinctio nostrum, quia vel labore ad ipsum dolores quo quas neque autem maiores dicta repellat odio? Ea excepturi dolorum magnam beatae illum libero nobis vel, atque, ullam ducimus mollitia pariatur nemo.
         <div class="">
-            <svg data-image-iteration="1" fill='none' viewBox='0 0 1457 240' ref={ref}>
-                <path data-path transform="translate(0,100)" d="M1 95C292 95 327.5 1 682 1C1036.5 1 1112.5 95 1456 95" stroke="#D77131" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="12 12" />
-                <g data-transform-group="plane" filter='drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2))'>
+            <svg style="height: 200px;margin-left: -200px;" data-image-iteration="1" fill="none" viewBox="0 0 1457 240" xmlns="http://www.w3.org/2000/svg">
+                <path data-path="1" transform="translate(0,100)" d="M1 95C292 95 327.5 1 682 1C1036.5 1 1112.5 95 1456 95" style="stroke:#109C74;stroke-width:2px;stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:12,12;" />
+                <g data-transform-group="plane" filter="drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2))">
                     <g transform="scale(0.5),translate(-208,88),rotate(8)">
                         <path d="M71.0003 78.4277L118.186 140.669L406.34 50.1171" fill="#2A2A2A"/>
                         <path d="M411.27 50.3718C294.997 42.0136 178.823 33.6483 62.5493 25.29C65.4019 43.0336 68.1477 60.6844 71.0004 78.4279L411.27 50.3718Z" fill="#E7E7E7"/>
@@ -65,7 +65,7 @@
             // raw-dog get this svg top position inside the reference frame
             let refBox = referenceFrame.getBoundingClientRect()
             let svgBox = svgEleme.getBoundingClientRect()
-            let scrollPercent = ((refBox.height - (svgBox.top - refBox.top)) / refBox.height) * 100
+            let scrollPercent = ((refBox.height - (svgBox.bottom - refBox.top)) / refBox.height) * 100
             // let scrollPercent = 
             console.log(scrollPercent,referenceFrame,svgEleme);
             setPositionByScroll(scrollPercent,svgEleme)

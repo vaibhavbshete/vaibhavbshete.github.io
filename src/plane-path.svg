@@ -1,0 +1,10 @@
+<svg style="height: 200px;" data-image-iteration="1" fill="none" viewBox="0 0 1457 240" xmlns="http://www.w3.org/2000/svg">
+    <path data-path="1" transform="translate(0,100)" d="M1 95C292 95 327.5 1 682 1C1036.5 1 1112.5 95 1456 95" style="stroke:#109C74;stroke-width:2px;stroke-miterlimit:10;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:12,12;" />
+    <g data-transform-group="plane" filter="drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2))">
+        <g transform="scale(0.5),translate(-208,88),rotate(8)">
+            <path d="M71.0003 78.4277L118.186 140.669L406.34 50.1171" fill="#2A2A2A"/>
+            <path d="M411.27 50.3718C294.997 42.0136 178.823 33.6483 62.5493 25.29C65.4019 43.0336 68.1477 60.6844 71.0004 78.4279L411.27 50.3718Z" fill="#E7E7E7"/>
+            <path d="M69.0586 109.24C49.6984 131.855 30.3381 154.47 10.9779 177.085C144.44 134.812 277.908 92.6381 411.27 50.3719L69.0586 109.24Z" fill="#FEFEFE"/>
+        </g>
+    </g>
+</svg>

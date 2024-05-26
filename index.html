@@ -13,12 +13,12 @@
             <header class="flex gap-4 flex-wrap justify-center mt-8 mb-4">
 
                 <div class=" text-center ">
-                    <h1 class="text-3xl font-bold text-gray-600">
+                    <h1 class="text-3xl font-bold text-gray-600 inline">
                         Vaibhav Shete
                     </h1>
-                    <h3 class="text-2xl font-semibold text-gray-500">Workfolio</h3>
+                    <h3 class="text-2xl font-semibold text-gray-500 inline">Workfolio</h3>
                 </div>
-                <div class="">
+                <div class="flex flex-wrap gap-2">
                     <a class="block text-gray-400 hover:text-gray-600" href="https://www.linkedin.com/in/vaibhavbshete">
                         <svg class="text-lg inline align-middle" fill="currentColor" height="1em" viewBox="0 0 448 512">
                             <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -50,73 +50,10 @@
 
                 </div>
             </header>
-            <article x-data="tabs">
-                <nav class=" text-gray-500 text-center flex flex-wrap justify-center">
-                    <template x-for="tab in tabs">
-                    <a 
-                     class="text-gray-400 hover:text-gray-600 border-b-2 border-b-transparent px-3 py-2"
-                     :href="`#${tab.id}`"  x-text="tab.name"
-                     x-bind:class="{ 
-                        'border-b-gray-600 text-gray-600': openTab === tab.id,
-                        'border-b-transparent': openTab !== tab.id 
-                     }"
-                     x-on:click="openTab=tab.id" 
-                    >
-                    tabName
-                    </a>
-                    </template>
-                </nav>
-                <section>
-                    <template x-for="thisTab in tabs">
-                        <div x-show="openTab === thisTab.id" :id="thisTab.id">
-                            <div class="text-gray-400 my-4 text-center px-8">
-                                <ul class="space-y-4">
-                                    <template x-for="currwork in tabWorks(thisTab.id)">
-                                    <li>
-                                        <template x-if="currwork.data">
-                                            <div class="flex shadow rounded bg-gray-50 hover:bg-gray-100 p-1.5" >
-
-                                                <template x-if="currwork.data.thumbnail">
-                                                    <img class="h-20 rounded aspect-video object-cover" :src="currwork.data.thumbnail" :alt="currwork.name">
-                                                </template>
-                                                <template x-if="!(currwork.data.thumbnail)">
-                                                    <div class="h-20 rounded aspect-video bg-gray-200"></div>
-                                                </template>
-                                    
-                                                <div class="w-full text-left px-4">
-                                                    <!-- <div class="font-bold" x-text="currwork.name"></div> -->
-                                                    <!-- <div class="text-gray-500" x-text="currwork.data.type"></div> -->
-                                                    <table class="w-full">
-                                                        <thead><th class="text-center bg-gray-200 px-2" colspan="2"  x-text="currwork.name"></th></thead>
-                                                        <template x-if="currwork.data.type == 'short-film'" x-data="{filmData: currwork.data}">
-                                                            <tbody>
-                                                                <tr><th sc></th></tr>
-                                                                <tr><th class="px-2" scope="row">Director</th><td class="px-2" x-text="filmData.director"></td></tr>
-                                                                <tr><th class="px-2" scope="row">DoP</th><td class="px-2" x-text="filmData.dop"></td></tr>
-                                                                <tr><th class="px-2" scope="row">Duration</th><td class="px-2" x-text="filmData.duration"></td></tr>
-                                                            </tbody>
-                                                        </template>
-                                                    </table>
-                                                    <template  x-if="currwork.data.link">
-                                                        <a class="block text-gray-400 hover:text-gray-600" :href="currwork.data.link.url" target="_blank" x-text="currwork.data.link.type"></a>
-                                                    </template>
-                                                </div>
-
-                                            </div>
-                                        </template>
-                                        <template x-if="!(currwork.data)">
-                                            <span  x-text="currwork.name"></span>
-                                        </template>
-                                    </li>
-                                </template>
-                                </ul>
-                            </div>
-                        </div>
-                    </template>
-                </section>
-            </article>
+            <section id="tabs">
+            </section>
         </div>
     </main>
-    <script src="./src/main.js" type="module"></script>
+    <script src="./src/main.jsx" type="module"></script>
 </body>
 </html>

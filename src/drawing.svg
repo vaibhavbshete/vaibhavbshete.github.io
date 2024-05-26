@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512"
+   height="512"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title134">VS Github</title>
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:lockguides="false"
+     inkscape:zoom="1.4503086"
+     inkscape:cx="320.27665"
+     inkscape:cy="272.01107"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1194"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="stroke:none;stroke-width:3.53385827;stroke-dasharray:21.20308073, 21.20308073;paint-order:markers stroke fill;stroke-opacity:1;stroke-dashoffset:0"
+       id="rect902"
+       width="509.97916"
+       height="509.97916"
+       x="1.0104189"
+       y="1.0104189"
+       rx="45.098957"
+       ry="45.098957" />
+    <circle
+       style="display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ffffff;stroke-width:2.92913386;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="path1010"
+       cx="256"
+       cy="256"
+       r="204.5" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:15.8559;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 92.640129,194.06686 c 36.487781,33.19503 42.349371,199.89179 42.349371,199.89179 0.0534,0.007 208.65538,-169.32418 213.9991,-226.68531 1.6909,-18.15072 -19.06287,-36.34418 -43.737,-36.71 -28.28432,-0.41935 -40.69581,24.08844 -41.34368,40.11242 -2.34663,58.04067 153.38111,62.13897 157.65614,126.81071 4.7331,71.60126 -58.08324,99.0062 -99.47193,100.80197 -14.9658,0.64933 -63.09008,-11.1575 -63.51311,-54.29744 -0.16802,-17.13419 21.23128,-47.94139 55.63353,-50.25955 31.46608,-2.12032 87.68154,-15.65948 103.50695,-33.27453"
+       id="path1190"
+       sodipodi:nodetypes="ccsssssssc" />
+  </g>
+  <metadata
+     id="metadata132">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>VS Github</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -4,7 +4,7 @@
         "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2013,
         "roles":["editor"],
-        "data":{
+        "info":{
             "type":"short-film",
             "link":{
                 "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
@@ -22,7 +22,7 @@
         "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2013,
         "roles":["editor"],
-        "data":{
+        "info":{
             "type": "short-film",
             "link":{
                 "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
