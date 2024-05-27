@@ -64,13 +64,18 @@
    
     {
         "name": "Puran",
-        "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2014,
         "roles":["editor"],
         "info":{
             "type": "short-film",
             "language":"Marathi",
-            "thumbnail": "img/thumbnail-puran.jpg"
+            "thumbnail": "img/thumbnail-puran.jpg", 
+            "links" :[{
+                "url": "https://youtu.be/p9enJ4gcK8Q",
+                "type" :"Full Film", 
+                "platform" :"youtube" 
+            }],
+            "duration" :"6min"
         }
     },
     {
