@@ -9,7 +9,8 @@ window.React = React
 
 // window.Alpine = Alpine;
 function TabWrapper() {
-    let [ openTab, setOpenTab] = useState('editor')
+    let hashLinkedOpenTab = window.location.hash.substring(1) || 'editor'
+    let [ openTab, setOpenTab] = useState(hashLinkedOpenTab)
     let tabs = {
         tabs: [
             {
