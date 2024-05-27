@@ -1,66 +1,100 @@
 [
     {
+        "name": "The Muse",
+       
+        "year":2020,
+        "roles":["editor","colourist"],
+        "info":{
+            "type": "short-film",
+            "thumbnail": "img/thumbnail-muse.jpg",
+            "language":"Marathi",
+            "director": "Kshitij Vichare",
+            "producer":"Kolahal",
+            "dop":"Arjun Dhavale",
+            "links":[
+                {
+                    "url":"https://www.youtube.com/watch?v=NjUI32B6laI",
+                    "type":"Trailer",
+                    "platform":"youtube"
+                }
+            ]
+        }
+    },
+    {
         "name": "Devdasi",
         "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2013,
         "roles":["editor"],
         "info":{
             "type":"short-film",
-            "link":{
+            "links":[{
                 "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
                 "type": "Full Film",
                 "platform": "youtube"
-            },
+            }],
+            "language":"Marathi",
             "director": "Digant Patil",
+            "producer":"Fergusson College, Pune",
             "dop":"Utkarsh Marulkar",
             "duration":"15min",
             "thumbnail": "img/thumbnail-devdasi.jpg"
         }
     },
     {
-        "name": "Soniyacha Dinu",
-        "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
-        "year":2013,
+        "name": "The Monologue",
+        "year":2020,
         "roles":["editor"],
         "info":{
             "type": "short-film",
-            "link":{
-                "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
-                "type": "Full Film",
-                "platform": "youtube"
-            }
+            "thumbnail": "img/thumbnail-monologue.jpg",
+            "language":"Marathi",
+            "duration":"17min",
+            "director":"Varad Salvekar",
+            "dop":"Chaitanya Puranik",
+            "producer":"Crescent Productions",
+            "links":[
+                {
+                    "url": "https://www.youtube.com/watch?v=L9x4Hj1hZZc",
+                    "type": "Full Film",
+                    "platform": "youtube"
+                }
+            ]
         }
     },
+   
     {
         "name": "Puran",
         "link":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
         "year":2014,
-        "roles":["editor"]
-    },
-    {
-        "name": "Anabhidnya",
-        "link":"https://www.youtube.com/watch?v=eSSGjOvEyOo",
-        "year":2014,
-        "roles":["editor"]
+        "roles":["editor"],
+        "info":{
+            "type": "short-film",
+            "language":"Marathi",
+            "thumbnail": "img/thumbnail-puran.jpg"
+        }
     },
     {
         "name": "Kavadse",
-        "link":"https://youtu.be/jSbbKd3N3Sw",
         "year":2015,
-        "roles":["editor"]
+        "roles":["editor"],
+        "info":{
+            "type": "short-film",
+            "language":"Marathi",
+            "duration":"12min",
+            "thumbnail": "img/thumbnail-kavadse.jpg",
+            "director": "Sameer Kulkarni",
+            "producer":"Milind Soman",
+            "dop":"Utkarsh Marulkar",
+            "links":[
+                {
+                    "url":"https://youtu.be/jSbbKd3N3Sw",
+                    "type":"Full Film",
+                    "platform":"youtube"
+                }
+            ]
+        }
     },
-    {
-        "name": "The Monologue",
-        "link":"https://www.youtube.com/watch?v=L9x4Hj1hZZc",
-        "year":2020,
-        "roles":["editor"]
-    },
-    {
-        "name": "The Muse",
-        "link":"https://www.youtube.com/watch?v=NjUI32B6laI",
-        "year":2020,
-        "roles":["editor","colourist"]
-    },
+    
     {
         "name": "Ark Website",
         "link":"https://arkevents.co.in",
