@@ -6,8 +6,8 @@ export default function TabPanel({ tabs, openTab, tabWorks }) {
             tabs.map((tab) => {
 
                 return <div style={{ display: (openTab === tab.id) ? 'block' : 'none' }} >
-                    <div className="text-gray-400 my-4 text-center px-8">
-                        <ul className="space-y-4">
+                    <div className="text-gray-400 my-4">
+                        <ul className="space-y-6">
 
                             {
                                 tabWorks(tab.id).map((currwork) => {
