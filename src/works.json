@@ -68,7 +68,7 @@
         "info":{
             "type": "short-film",
             "language":"Marathi",
-            "thumbnail": "img/thumbnail-puran.jpg,
+            "thumbnail": "img/thumbnail-puran.jpg",
             "director":"Vaibhav Shete",
             "links" :[{
                 "url": "https://youtu.be/p9enJ4gcK8Q",
