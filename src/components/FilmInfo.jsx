@@ -12,6 +12,7 @@ export default function FilmInfo({ work }) {
             {info.duration && <span className=""> &bull; {info.duration}</span>}
             {info.language && <span className=""> &bull; {info.language}</span>}
         </div>
+        <hr className="mx-3"/>
         <div className="mt-3 px-2 pb-2 flex gap-4 flex-wrap">
             {info.director && <div><small className="font-bold">Director</small><div className="">{info.director}</div></div>}
             {info.dop && <div><small className="font-bold">DoP</small><div className="">{info.dop}</div></div>}
@@ -29,10 +30,14 @@ export default function FilmInfo({ work }) {
                 </tbody>
             </table> */}
         </div>
-        {info.links?.length && <div className="mt-3 px-2 pb-2 flex">
+        {info.links?.length && <> 
+        <hr className="mx-3"/>
+        <div className="mt-3 px-2 pb-2 flex">
             {info.links.map((link) => {
                 return <Link link={link} />
             })}
-        </div>}
+        </div>
+            </>
+        }
     </div>
 }
