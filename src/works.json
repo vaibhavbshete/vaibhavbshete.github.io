@@ -1,7 +1,6 @@
 [
     {
-        "name": "The Muse",
-       
+        "name": "The Muse",      
         "year":2020,
         "roles":["editor","colourist"],
         "info":{
@@ -104,12 +103,22 @@
         "name": "Ark Website",
         "link":"https://arkevents.co.in",
         "year":2020,
-        "roles":["dev","designer"]
+        "roles":["dev","designer"],
+        "info":{
+            "type": "website",
+            "Client": "Ark Events and Entertainment, Pune",
+            "Person of Contact": "Pratiksha Bharti"
+        }
     },
     {
         "name": "Wonderlab Website",
         "link":"https://www.wonderlabtoys.com",
         "year":2023,
-        "roles":["dev","designer"]
+        "roles":["dev","designer"],
+        "info":{
+            "type": "website",
+            "Client": "Wonderlab - Wonderland of Toys",
+            "Person of Contact": "Shivani Pethe"
+        }
     }
 ]
