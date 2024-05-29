@@ -31,7 +31,7 @@ export default function FilmInfo({ work }) {
             </table> */}
         </div>
         {info.links?.length && <> 
-        <hr className="mx-3"/>
+        <hr className="mx-6 border-2 border-gray-400 border-dashed"/>
         <div className="mt-3 px-2 pb-2 flex">
             {info.links.map((link) => {
                 return <Link link={link} />
