@@ -13,18 +13,18 @@ export default function WorkInfo({work}) {
             work.info?.type == 'short-film' && <FilmInfo work={work}></FilmInfo>
         }
         {
-            work.info?.type != 'short-film' && <div className="flex shadow rounded bg-gray-50 hover:bg-gray-100 p-1.5" >
+            work.info?.type != 'short-film' && <div className="flex flex-wrap sm:flex-nowrap bg-gray-50 hover:bg-gray-100 " >
             {
-                work.info?.thumbnail&&<img className="h-20 rounded aspect-video object-cover" src={work.info.thumbnail} alt={work.name} />
+                work.info?.thumbnail&&<img className="w-full sm:w-auto sm:h-40 aspect-video object-cover" src={work.info.thumbnail} alt={work.name} />
             }
             {
-                !work.info?.thumbnail&& <div className="h-20 rounded aspect-video bg-gray-200"></div>
+                !work.info?.thumbnail&& <div className="w-full sm:w-auto sm:h-40 aspect-video bg-gray-200"></div>
             }
 
         
             {
-                <div className="w-full text-left px-4">
-                    <h2 className="text-center bg-gray-200 px-2">{work.name}</h2>
+                <div className="w-full text-left px-2">
+                    <h2 className="text-center font-semibold px-2">{work.name}</h2>
                     {
                         enumData && <table className="w-full">
                         <tbody>
@@ -32,7 +32,7 @@ export default function WorkInfo({work}) {
                                 
                                 enumData.map(([key, value]) => {
                                 
-                                    return <tr key={key}><th className="px-2" scope="row">{key}</th>
+                                    return key !='type' && <tr key={key}><th className="px-2" scope="row">{key}</th>
                                         <td className="px-2" >
                                             {
                                                 (key == 'link') && (value.platform == 'youtube') && <Link link={value} />
