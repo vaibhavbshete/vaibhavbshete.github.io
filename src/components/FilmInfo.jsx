@@ -34,7 +34,7 @@ export default function FilmInfo({ work }) {
         <hr className="mx-6 border border-gray-200 border-dashed"/>
         <div className="mt-3 px-2 pb-2 flex">
             {info.links.map((link) => {
-                return <Link link={link} />
+                return <Link link={link} key={link.url } />
             })}
         </div>
             </>
