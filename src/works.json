@@ -102,13 +102,18 @@
     
     {
         "name": "Ark Website",
-        "link":"https://arkevents.co.in",
+        
         "year":2020,
         "roles":["dev","designer"],
         "info":{
+            "thumbnail":"img/ark-horiz.webp",
             "type": "website",
             "Client": "Ark Events and Entertainment, Pune",
-            "Person of Contact": "Pratiksha Bharti"
+            "Person of Contact": "Pratiksha Bharti",
+            "link":{
+                "url":"https://arkevents.co.in",
+                "type":"Website"
+            }
         }
     },
     {
@@ -117,9 +122,14 @@
         "year":2023,
         "roles":["dev","designer"],
         "info":{
+            "thumbnail":"img/wl-horiz.webp",
             "type": "website",
             "Client": "Wonderlab - Wonderland of Toys",
-            "Person of Contact": "Shivani Pethe"
+            "Person of Contact": "Shivani Pethe",
+            "link":{
+                "url":"https://www.wonderlabtoys.com",
+                "type":"Website"
+            }
         }
     }
 ]
