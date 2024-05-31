@@ -5,7 +5,7 @@
         "roles":["editor","colourist"],
         "info":{
             "type": "short-film",
-            "thumbnail": "img/thumbnail-muse.jpg",
+            "thumbnail": "img/the-muse-poster.webp",
             "language":"Marathi",
             "director": "Kshitij Vichare",
             "producer":"Kolahal",
@@ -36,7 +36,7 @@
             "producer":"Fergusson College, Pune",
             "dop":"Utkarsh Marulkar",
             "duration":"15min",
-            "thumbnail": "img/thumbnail-devdasi.jpg"
+            "thumbnail": "img/thumbnail-devdasi.webp"
         }
     },
     {
