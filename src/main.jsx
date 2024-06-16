@@ -1,10 +1,9 @@
 // import Alpine from "alpinejs";
 import works from "./works.json";
-import React, { StrictMode, useState } from "react";
+import  { StrictMode, useState } from "react";
 import { createRoot } from "react-dom/client";
 import  TabPanel  from "./components/TabPanel";
 import TabBar from "./components/TabBar";
-window.React = React
 // window.works = works;
 
 // window.Alpine = Alpine;
