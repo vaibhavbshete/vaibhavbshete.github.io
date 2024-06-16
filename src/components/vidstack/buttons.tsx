@@ -14,6 +14,7 @@ import {
   ClosedCaptionsOnIcon,
   FullscreenExitIcon,
   FullscreenIcon,
+  LinkIcon,
   MuteIcon,
   PauseIcon,
   PictureInPictureExitIcon,
@@ -131,4 +132,17 @@ export function Fullscreen({ tooltipPlacement }: MediaButtonProps) {
       </Tooltip.Content>
     </Tooltip.Root>
   );
+}
+
+export function PlayExternal({ tooltipPlacement,url,platform }) { 
+  return (<Tooltip.Root>
+    <Tooltip.Trigger asChild>
+      <a href={url} className={buttonClass} target='_blank'>
+        <LinkIcon className='w-8 h-8' />
+      </a>
+    </Tooltip.Trigger>
+    <Tooltip.Content className={tooltipClass} placement={tooltipPlacement}>
+      Visit on { platform}
+    </Tooltip.Content>
+  </Tooltip.Root>)
 }
