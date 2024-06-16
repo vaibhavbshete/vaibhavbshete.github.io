@@ -32,7 +32,8 @@
                 "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
                 "type": "Full Film",
                 "platform": "youtube",
-                "title":"Devdasi.. Full Film"
+                "title":"Devdasi.. Full Film",
+                "cover":"img/thumbnail-devdasi.webp"
             }],
             "language":"Marathi",
             "director": "Digant Patil",
@@ -48,7 +49,7 @@
         "roles":["editor"],
         "info":{
             "type": "film",
-            "thumbnail": "img/thumbnail-monologue.jpg",
+            "thumbnail": "img/poster-the-monologue.webp",
             "language":"Marathi",
             "duration":"17min",
             "director":"Varad Salvekar",
@@ -58,7 +59,8 @@
                 {
                     "url": "https://www.youtube.com/watch?v=L9x4Hj1hZZc",
                     "type": "Full Film",
-                    "platform": "youtube"
+                    "platform": "youtube",
+                    "cover":"img/thumbnail-monologue.webp"
                 }
             ]
         }
@@ -71,7 +73,7 @@
         "info":{
             "type": "film",
             "language":"Marathi",
-            "thumbnail": "img/thumbnail-puran.jpg",
+            "thumbnail": "img/thumbnail-puran.webp",
             "director":"Vaibhav Shete",
             "videos" :[{
                 "url": "https://youtu.be/p9enJ4gcK8Q",
@@ -89,7 +91,7 @@
             "type": "film",
             "language":"Marathi",
             "duration":"12min",
-            "thumbnail": "img/thumbnail-kavadse.jpg",
+            "thumbnail": "img/thumbnail-kavadse.webp",
             "director": "Sameer Kulkarni",
             "producer":"Milind Soman",
             "dop":"Utkarsh Marulkar",
