@@ -4,17 +4,19 @@
         "year":2020,
         "roles":["editor","colourist"],
         "info":{
-            "type": "short-film",
+            "type": "film",
             "thumbnail": "img/the-muse-poster.webp",
             "language":"Marathi",
             "director": "Kshitij Vichare",
             "producer":"Kolahal",
             "dop":"Arjun Dhavale",
-            "links":[
+            "videos":[
                 {
                     "url":"https://www.youtube.com/watch?v=NjUI32B6laI",
                     "type":"Trailer",
-                    "platform":"youtube"
+                    "platform":"youtube",
+                    "cover":"img/thumbnail-muse.jpg",
+                    "title":"The Muse Trailer"
                 }
             ]
         }
@@ -25,11 +27,12 @@
         "year":2013,
         "roles":["editor"],
         "info":{
-            "type":"short-film",
-            "links":[{
+            "type":"film",
+            "videos":[{
                 "url":"https://www.youtube.com/watch?v=Q0k_-fRRgVo",
                 "type": "Full Film",
-                "platform": "youtube"
+                "platform": "youtube",
+                "title":"Devdasi.. Full Film"
             }],
             "language":"Marathi",
             "director": "Digant Patil",
@@ -44,14 +47,14 @@
         "year":2020,
         "roles":["editor"],
         "info":{
-            "type": "short-film",
+            "type": "film",
             "thumbnail": "img/thumbnail-monologue.jpg",
             "language":"Marathi",
             "duration":"17min",
             "director":"Varad Salvekar",
             "dop":"Chaitanya Puranik",
             "producer":"Crescent Productions",
-            "links":[
+            "videos":[
                 {
                     "url": "https://www.youtube.com/watch?v=L9x4Hj1hZZc",
                     "type": "Full Film",
@@ -66,11 +69,11 @@
         "year":2014,
         "roles":["editor"],
         "info":{
-            "type": "short-film",
+            "type": "film",
             "language":"Marathi",
             "thumbnail": "img/thumbnail-puran.jpg",
             "director":"Vaibhav Shete",
-            "links" :[{
+            "videos" :[{
                 "url": "https://youtu.be/p9enJ4gcK8Q",
                 "type" :"Full Film", 
                 "platform" :"youtube" 
@@ -83,14 +86,14 @@
         "year":2015,
         "roles":["editor"],
         "info":{
-            "type": "short-film",
+            "type": "film",
             "language":"Marathi",
             "duration":"12min",
             "thumbnail": "img/thumbnail-kavadse.jpg",
             "director": "Sameer Kulkarni",
             "producer":"Milind Soman",
             "dop":"Utkarsh Marulkar",
-            "links":[
+            "videos":[
                 {
                     "url":"https://youtu.be/jSbbKd3N3Sw",
                     "type":"Full Film",

@@ -10,10 +10,10 @@ export default function WorkInfo({work}) {
     // console.log(enumData);
     return <>
         {
-            work.info?.type == 'short-film' && <FilmInfo work={work}></FilmInfo>
+            work.info?.type == 'film' && <FilmInfo work={work}></FilmInfo>
         }
         {
-            work.info?.type != 'short-film' && <div className="flex flex-wrap sm:flex-nowrap bg-gray-50 " >
+            work.info?.type != 'film' && <div className="flex flex-wrap sm:flex-nowrap bg-gray-50 " >
             {
                 work.info?.thumbnail&&<img className="w-full sm:w-auto sm:h-40 aspect-video object-cover" src={work.info.thumbnail} alt={work.name} />
             }
