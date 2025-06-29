@@ -17,7 +17,7 @@ function TabWrapper() {
     const tabs = [
         {
             id: 'dev',
-            name: 'PHP Web Developer',
+            name: 'Web Developer',
         },
         {
             id: 'editor',
