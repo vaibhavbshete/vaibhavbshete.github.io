@@ -9,7 +9,7 @@ import TabBar from "./components/TabBar";
 // window.works = works;
 // window.Alpine = Alpine;
 function TabWrapper() {
-   const worksPromise = import('./works.json')
+//    const worksPromise = import('./works.json')
     
     // console.log(works)    
     let hashLinkedOpenTab = window.location.hash.substring(1) || 'editor'
@@ -42,7 +42,7 @@ function TabWrapper() {
     // ;
     return <>
         <TabBar tabs={tabs} openTab={openTab} setOpenTab={setOpenTab} />
-        <TabPanel tabs={tabs} openTab={openTab} worksPromise={worksPromise} />
+        <TabPanel tabs={tabs} openTab={openTab}/>
     </>
 }
 function App() {

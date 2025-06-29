@@ -1,14 +1,14 @@
 'use client'
-import { use } from "react"
+// import { use } from "react"
 import WorkInfo from "./WorkInfo"
 
-// import works from "./works.json";
-export default function TabPanel({ tabs, openTab, worksPromise }) {
-    const works = use(worksPromise)
+import works from "../works.json";
+export default function TabPanel({ tabs, openTab }) {
+    // const works = use(worksPromise)
     // console.log(works, typeof works, works.default);
     
     const tabWorks = (role) => {
-        return works.default.filter(work => (new Set(work.roles)).has(role))
+        return works.filter(work => (new Set(work.roles)).has(role))
     }
     // console.log(tabs,openTab,tabWorks('editor'));
     return <>
