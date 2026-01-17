@@ -136,5 +136,21 @@
                 "type":"Website"
             }
         }
+    },
+    {
+        "name": "Chaitany Puranik Portfolio Website",
+        "link":"https://chaitanyapuranik.com/",
+        "year":2025,
+        "roles":["dev","designer"],
+        "info":{
+            "thumbnail":"img/dop-c-horiz.webp",
+            "type": "website",
+            "Client": "Chaitanya Puranik",
+            "Person of Contact": "Chaitanya Puranik",
+            "link":{
+                "url":"https://chaitanyapuranik.com/",
+                "type":"Website"
+            }
+        }
     }
 ]
