@@ -20,8 +20,6 @@ export default function WorkInfo({work}) {
             {
                 !work.info?.thumbnail&& <div className="w-full sm:w-auto sm:h-40 aspect-video bg-gray-200"></div>
             }
-
-        
             {
                 <div className="w-full text-left px-2">
                     <h2 className="text-center font-semibold px-2 py-1 bg-gray-200">{work.name}</h2>
@@ -29,33 +27,22 @@ export default function WorkInfo({work}) {
                         enumData && <table className="w-full mt-1">
                         <tbody>
                             {
-                                
                                 enumData.map(([key, value]) => {
-                                
                                     return key !='type' && key!='link' && key!='thumbnail' && <tr key={key}><th className="px-2" scope="row">{key}</th>
                                         <td className="px-2" >
                                             {
                                                 (key == 'link') && <Link link={value} />
                                             }
-                                            {/* {
-                                                (key == 'link') &&(!value.platform) && <a href={value.url} target="_blank">{value.type}</a>
-                                                
-                                            } */}
                                             {
                                                 (key != 'link') &&
                                                 <span>{value}</span>
                                             }
-                                            
                                         </td>
                                     </tr>
                                 } )
                             }
-                                {/* <tr><th className="px-2" scope="row">Director</th><td className="px-2" >{ work.data.director}</td></tr>
-                                <tr><th className="px-2" scope="row">DoP</th><td className="px-2" >{work.data.dop}</td></tr>
-                                <tr><th className="px-2" scope="row">Duration</th><td className="px-2" >{  work.data.duration}</td></tr> */}
                         </tbody>
-                    
-                    </table>
+                        </table>
                     }
                     
                     {
