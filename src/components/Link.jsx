@@ -1,6 +1,6 @@
 export default function Link({ link,className }) {
 
-    return <a className={"bg-gray-200 hover:bg-gray-100 rounded px-4 py-1 inline-block" + " " + className} href={link.url} target="_blank" rel="noreferrer">
+    return <a className={"bg-gray-200 text-gray-400 hover:bg-gray-300 hover:text-gray-500 rounded px-4 py-1 inline-block" + " " + className} href={link.url} target="_blank" rel="noreferrer">
         {link.platform == 'youtube' &&
             <svg className="w-4 h-4 inline align-middle -mt-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                 {/* <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--> */}
