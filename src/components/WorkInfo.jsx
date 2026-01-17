@@ -24,7 +24,7 @@ export default function WorkInfo({work}) {
         
             {
                 <div className="w-full text-left px-2">
-                    <h2 className="text-center font-semibold px-2 py-1">{work.name}</h2>
+                    <h2 className="text-center font-semibold px-2 py-1 bg-gray-200">{work.name}</h2>
                     {
                         enumData && <table className="w-full mt-1">
                         <tbody>
@@ -59,7 +59,7 @@ export default function WorkInfo({work}) {
                     }
                     
                     {
-                    work.info?.link && <Link link={work.info.link} className={"mx-2 mt-3"} />
+                    work.info?.link && <Link link={work.info.link} className={"mx-2 mt-7"} />
                         // <a className="block text-gray-400 hover:text-gray-600" href={work.info.link.url} target="_blank">{work.info.link.type }</a>
                     }
             </div>
