@@ -1,12 +1,13 @@
 import Link from "./Link"
 import '@vidstack/react/player/styles/base.css'
 import { Controls, FullscreenButton, Gesture, MediaPlayer, MediaProvider, PlayButton, Poster, useMediaState } from '@vidstack/react';
-import {VideoLayout} from './vidstack/layouts/video-layout';
+import { VideoLayout } from './vidstack/layouts/video-layout';
+import { filmWorkInfo } from "../types";
 
-export default function FilmInfo({ work }) {
+export default function FilmInfo({ work }: { work: filmWorkInfo })  {
     const isPaused = useMediaState('paused')
     let info = work.info
-    info.year = work.year
+    // info.year = work.year
 
     return <div className="flex-col">
         <div className="bg-gray-50 mx-auto flex items-center md:items-start flex-col md:flex-row">
@@ -17,7 +18,7 @@ export default function FilmInfo({ work }) {
             <div className="max-w-prose w-full">
                 <h2 className="font-bold text-lg px-2 mt-3">{work.name}</h2>
                 <div className="px-2">
-                    <span className="">{info.year}</span>
+                    <span className="">{work.year}</span>
                     {info.duration && <span className=""> &bull; {info.duration}</span>}
                     {info.language && <span className=""> &bull; {info.language}</span>}
                 </div>
