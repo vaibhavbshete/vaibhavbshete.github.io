@@ -26,8 +26,8 @@ export type filmWorkInfo = {
 export type websiteWorkInfo = {
     "thumbnail": "img/ark-horiz.webp",
     "type": "website",
-    "Client": "Ark Events and Entertainment, Pune",
-    "Person of Contact": "Pratiksha Bharti",
+    "client": "Ark Events and Entertainment, Pune",
+    poc?: "Pratiksha Bharti",
     "link": link
 
 }
