@@ -35,7 +35,7 @@ export type websiteWorkInfo = {
 
 export type work = {
     name: string,
-    year: Number,
+    year: number,
     // info: websiteInfo | filmInfo,
     link?: string,
     info: filmWorkInfo | websiteWorkInfo
