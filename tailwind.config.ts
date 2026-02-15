@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+import plugin = require('tailwindcss-animate')
+import vidstackTailwind =  require( '@vidstack/react/tailwind.cjs')
+export default {
   content: [
     './index.html',
     './404.html',
@@ -17,8 +19,8 @@ module.exports = {
     },
   },
   plugins: [
-    require('tailwindcss-animate'),
-    require('@vidstack/react/tailwind.cjs')({
+    plugin,
+    vidstackTailwind({
       prefix: 'media',
     }),
     customVariants,
