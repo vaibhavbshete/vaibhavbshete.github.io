@@ -113,8 +113,8 @@
         "info":{
             "thumbnail":"img/ark-horiz.webp",
             "type": "website",
-            "Client": "Ark Events and Entertainment, Pune",
-            "Person of Contact": "Pratiksha Bharti",
+            "client": "Ark Events and Entertainment, Pune",
+            "poc": "Pratiksha Bharti",
             "link":{
                 "url":"https://arkevents.co.in",
                 "type":"Website"
@@ -129,8 +129,8 @@
         "info":{
             "thumbnail":"img/wl-horiz.webp",
             "type": "website",
-            "Client": "Wonderlab - Wonderland of Toys",
-            "Person of Contact": "Shivani Pethe",
+            "client": "Wonderlab - Wonderland of Toys",
+            "poc": "Shivani Pethe",
             "link":{
                 "url":"https://www.wonderlabtoys.com",
                 "type":"Website"
@@ -138,14 +138,14 @@
         }
     },
     {
-        "name": "Chaitany Puranik Portfolio Website",
+        "name": "Chaitanya Puranik Portfolio Website",
         "link":"https://chaitanyapuranik.com/",
         "year":2025,
         "roles":["dev","designer"],
         "info":{
             "thumbnail":"img/dop-c-horiz.webp",
             "type": "website",
-            "Client": "Chaitanya Puranik",
+            "client": "Chaitanya Puranik",
             "link":{
                 "url":"https://chaitanyapuranik.com/",
                 "type":"Website"
