@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import plugin = require('tailwindcss-animate')
+import tailwindcssAmimate = require('tailwindcss-animate')
 import vidstackTailwind =  require( '@vidstack/react/tailwind.cjs')
 export default {
   content: [
@@ -19,13 +19,13 @@ export default {
     },
   },
   plugins: [
-    plugin,
+    tailwindcssAmimate,
     vidstackTailwind({
       prefix: 'media',
     }),
     customVariants,
   ],
-};
+} satisfies Config
 
 function customVariants({ addVariant, matchVariant }) {
   // Strict version of `.group` to help with nesting.
