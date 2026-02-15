@@ -1,34 +1,34 @@
 export type link = {
-    "url":"https://arkevents.co.in",
-    "type":"Website"
+    url:string,
+    type:"Website"
 }
 
 export type video = {
-    "url":"https://youtu.be/jSbbKd3N3Sw",
-    "type":"Full Film",
-    "platform": "youtube",
+    url:string,
+    type:"Full Film"|"Trailer",
+    platform: 'youtube'|'vimeo'|'local',
     title?: string,
     cover?: string
 }
 
 export type filmWorkInfo = {
-    "type": "film",
-    "language": "Marathi",
-    "duration": "12min",
-    "thumbnail": "img/thumbnail-kavadse.webp",
-    "director": "Sameer Kulkarni",
-    "producer": "Milind Soman",
-    "dop": "Utkarsh Marulkar",
-    "videos": Array<video>,
+    type: "film",
+    language: string,
+    duration: string,
+    thumbnail: string,
+    director: string,
+    producer?: string,
+    dop: string,
+    videos: Array<video>,
     links?: Array<link>  
 }
 
 export type websiteWorkInfo = {
-    "thumbnail": "img/ark-horiz.webp",
-    "type": "website",
-    "client": "Ark Events and Entertainment, Pune",
-    poc?: "Pratiksha Bharti",
-    "link": link
+    thumbnail: string,
+    type: "website",
+    client: string,
+    poc?: string,
+    link: link
 
 }
 
