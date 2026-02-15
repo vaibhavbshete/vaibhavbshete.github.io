@@ -14,7 +14,7 @@ export interface VideoLayoutProps {
   thumbnails?: string;
 }
 
-export function VideoLayout({ thumbnails,url,platform }) {
+export function VideoLayout({ thumbnails = null,url,platform }) {
   let isPaused = useMediaState('paused')
   let isPlayedOnce = useMediaState('played')
   return (
