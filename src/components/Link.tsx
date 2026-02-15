@@ -1,4 +1,6 @@
-export default function Link({ link,className }) {
+import { link } from "../types";
+
+export default function Link({ link,className =''} : {link:link,className?:string}) {
 
     return <a className={"bg-gray-200 text-gray-400 hover:bg-gray-300 hover:text-gray-500 rounded px-4 py-1 inline-block" + " " + className} href={link.url} target="_blank" rel="noreferrer">
         {link.platform == 'youtube' &&

@@ -1,6 +1,7 @@
 export type link = {
     url:string,
-    type:"Website"
+    type: "Website"
+    platform?:string
 }
 
 export type video = {
