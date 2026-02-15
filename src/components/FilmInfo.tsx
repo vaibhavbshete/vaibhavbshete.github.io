@@ -2,9 +2,9 @@ import Link from "./Link"
 import '@vidstack/react/player/styles/base.css'
 import { Controls, FullscreenButton, Gesture, MediaPlayer, MediaProvider, PlayButton, Poster, useMediaState } from '@vidstack/react';
 import { VideoLayout } from './vidstack/layouts/video-layout';
-import { filmWorkInfo } from "../types";
+import { filmWorkInfo, work } from "../types";
 
-export default function FilmInfo({ work }: { work: filmWorkInfo })  {
+export default function FilmInfo({ work }: { work: work & {info:filmWorkInfo} })  {
     const isPaused = useMediaState('paused')
     let info = work.info
     // info.year = work.year
