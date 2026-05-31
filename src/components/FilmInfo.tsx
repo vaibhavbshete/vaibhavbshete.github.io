@@ -11,7 +11,7 @@ export default function FilmInfo({ work }: { work: work & {info:filmWorkInfo} })
 
     return <div className="flex-col">
         <div className="bg-gray-50 mx-auto flex items-center md:items-start flex-col md:flex-row">
-            <div className="aspect-square p-2 bg-gray-200 w-52 h-52 md:w-64 md:h-64 max-w-full">
+            <div className="hidden md:block aspect-square p-2 bg-gray-200 w-52 h-52 md:w-64 md:h-64 max-w-full">
                 {info.thumbnail &&<img className="w-full h-full object-contain" src={info.thumbnail} alt={work.name} />}
                 {!info.thumbnail &&<div className="w-full h-full  flex items-center justify-center"  >{work.name}</div>}
             </div>
