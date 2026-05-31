@@ -17,7 +17,7 @@ export default function TabPanel({ tabs, openTab }) {
 
                 return <div style={{ display: (openTab === tab.id) ? 'block' : 'none' }} key={tab.id}>
                     <div className="text-gray-400 my-4">
-                        <ul className="space-y-6">
+                        <ul className="space-y-12">
                             {
                                 tabWorks(tab.id).map((currwork) => {
                                     return <li key={ currwork.name}>
