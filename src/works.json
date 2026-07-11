@@ -8,6 +8,7 @@
             "thumbnail": "img/poster-the-muse.webp",
             "language":"Marathi",
             "director": "Kshitij Vichare",
+            "duration":"15min",
             "producer":"Kolahal",
             "dop":"Arjun Dhavale",
             "videos":[
@@ -39,7 +40,7 @@
             "director": "Digant Patil",
             "producer":"Fergusson College, Pune",
             "dop":"Utkarsh Marulkar",
-            "duration":"15min",
+            "duration":"19min",
             "thumbnail": "img/thumbnail-devdasi.webp"
         }
     },
